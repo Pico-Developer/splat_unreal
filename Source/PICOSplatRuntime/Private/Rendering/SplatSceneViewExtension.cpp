@@ -249,7 +249,7 @@ void FSplatSceneViewExtension::PostRenderBasePassMobile_RenderThread(
 			RHICmdList,
 			RenderSplat,
 			TEXT("Splat: Render %s"),
-			*Proxy->GetName());
+			Proxy->GetName());
 		if (bIsSortingOnGPU)
 		{
 			FRenderSplatGPUSortDeps Parameters{};
