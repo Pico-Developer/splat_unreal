@@ -1,0 +1,3 @@
+[submodule "Source/ThirdParty/splat"]
+	path = Source/ThirdParty/splat
+    url = git@github.com:Pico-Developer/splat.git

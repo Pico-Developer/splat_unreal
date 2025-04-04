@@ -1,0 +1,36 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1",
+	"FriendlyName": "PICO Splat",
+	"Description": "3D Gaussian Splatting for PICO 4 Ultra",
+	"Category": "Rendering",
+	"CreatedBy": "PICO",
+	"CreatedByURL": "https://www.picoxr.com/",
+	"DocsURL": "https://developer.picoxr.com/document/unreal/pico-splat/",
+	"EngineVersion": "5.4.0",
+	"FabURL": "com.epicgames.launcher://ue/Fab/product/8055bcb7-f16d-4a3e-bea1-b4139c84e172",
+	"SupportURL": "https://developer.picoxr.com/support/",
+	"CanContainContent": false,
+	"IsBetaVersion": false,
+	"Modules": [
+		{
+			"Name": "PICOSplatEditor",
+			"Type": "Editor",
+			"LoadingPhase": "Default",
+			"PlatformAllowList": [ "Win64" ]
+		},
+		{
+			"Name": "PICOSplatRuntime",
+			"Type": "Runtime",
+			"LoadingPhase": "PostConfigInit",
+			"PlatformAllowList": [ "Win64", "Android" ]
+		},
+		{
+			"Name": "PICOSplatThirdParty",
+			"Type": "Editor",
+			"LoadingPhase": "Default",
+			"PlatformAllowList": [ "Win64" ]
+		}
+	]
+}

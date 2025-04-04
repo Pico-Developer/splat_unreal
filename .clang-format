@@ -1,0 +1,48 @@
+# <https://clang.llvm.org/docs/ClangFormatStyleOptions.html>
+# <https://dev.epicgames.com/documentation/en-us/unreal-engine/epic-cplusplus-coding-standard-for-unreal-engine>
+---
+#
+# General
+#
+
+# Unreal puts pointers & references on the type.
+PointerAlignment: Left
+
+# Lots of comments have long lines and custom math formatting, so ignore.
+ReflowComments: false
+
+#
+# Braces
+#
+
+# Unreal uses Allman style, and wants braces around all if, while, etc. bodies.
+BreakBeforeBraces: Allman
+InsertBraces: true
+
+#
+# Indentation
+#
+
+# Unreal uses 4-space-width tabs.
+IndentWidth: 4
+TabWidth: 4
+UseTab: AlignWithSpaces
+
+# Unreal does not indent public:, etc.
+AccessModifierOffset: -4
+IndentAccessModifiers: false
+
+#
+# Arguments & Parameters
+#
+
+# Don't pack. This puts them all on one row, or each on their own row.
+AlignAfterOpenBracket: AlwaysBreak
+AllowAllArgumentsOnNextLine: true
+AllowAllParametersOfDeclarationOnNextLine: true
+BinPackArguments: false
+BinPackParameters: false
+PackConstructorInitializers: NextLine
+
+# Unreal likes constructor initializers to have the comma at the start of the line.
+BreakConstructorInitializers: BeforeComma

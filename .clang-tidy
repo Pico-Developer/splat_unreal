@@ -1,0 +1,14 @@
+# <https://clang.llvm.org/extra/clang-tidy/>
+# To help debug when using VSCode, set "C_Cpp.loggingLevel": "Debug".
+# "C_Cpp.codeAnalysis.exclude": {
+# 	"Plugins/PICOOpenXR/**": true
+# },
+# "C_Cpp.loggingLevel": "Debug",
+# "C_Cpp.codeAnalysis.clangTidy.headerFilter": "${workspaceFolder}/SplatUnreal/Plugins/PICOSplat/**",
+---
+Checks:
+  - '-*' # Disable all defaults.
+  - 'cppcoreguidelines-*' # C++ Core Guidelines (https://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines).
+  - '-cppcoreguidelines-explicit-virtual-functions' # Unreal uses virtual .* override.
+ExtraArgs:
+  - '-Wno-invalid-constexpr' # Unreal workaround.

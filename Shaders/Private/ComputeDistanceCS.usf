@@ -1,0 +1,15 @@
+/*
+  Copyright (c) 2025 PICO Technology Co., Ltd. See LICENSE.md.
+*/
+
+#include "/Engine/Public/Platform.ush"
+
+#include "../ThirdParty/Public/constants.ush"
+#include "../ThirdParty/Public/unpacking.ush"
+
+float4x4 local_to_clip;
+uint num_splats;
+float3 pos_scale_cm;
+float3 pos_min_cm;
+
+#include "../ThirdParty/Public/compute_distance.cs.ush"
